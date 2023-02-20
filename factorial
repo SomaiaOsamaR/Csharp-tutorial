@@ -1,0 +1,18 @@
+using System;
+
+public class factorial
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Please Enter the value of n: ");
+        int n= int.Parse(Console.ReadLine());
+        
+        int factorial=1;
+        for(int i=1;i<=n;i++)
+        {
+            factorial = factorial * i;
+         }
+        Console.WriteLine ("Factorial of {0}={1} ", n,factorial);
+        Console.ReadKey();
+    }
+}
